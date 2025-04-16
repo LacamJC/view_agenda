@@ -1,0 +1,17 @@
+/* src/Appointment.css */
+.appointment {
+  background-color: #a7d1eb;
+  color: white;
+  padding: 8px;
+  margin: 2px;
+  border-radius: 4px;
+  font-size: 0.9em;
+  position: absolute; /* Permite o posicionamento via 'top' e 'height' */
+  width: calc(100% - 4px); /* Considera a margem */
+  box-sizing: border-box; /* Garante que padding e border não aumentem a largura */
+}
+
+.appointment-time {
+  font-size: 0.8em;
+  color: #333;
+}

@@ -1,0 +1,29 @@
+/* src/ProfessionalColumn.css */
+.professional-column {
+    flex: 1;
+    border-right: 1px solid #ccc;
+    display: flex;
+    flex-direction: column;
+    position: relative; /* Importante para posicionar os agendamentos absolutamente dentro */
+  }
+  
+  .professional-header {
+    background-color: #f0f0f0;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+    border-bottom: 1px solid #ccc;
+    height: 40px;
+    line-height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .appointments-container {
+    position: absolute; /* Container para os agendamentos posicionados absolutamente */
+    top: 40px; /* Abaixo do cabeçalho */
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
