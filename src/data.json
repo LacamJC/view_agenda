@@ -1,0 +1,18 @@
+{
+    "colaboradores": [
+      "Rodrigo Salomão",
+      "Felipe Darc Silva"
+    ],
+    "agendamentos": [
+      {
+        "colaborador": "Rodrigo Salomão",
+        "dia": "17/04",
+        "cliente": "CAOA D"
+      },
+      {
+        "colaborador": "Felipe Darc Silva",
+        "dia": "17/04",
+        "cliente": "AGRO C"
+      }
+    ]
+  }

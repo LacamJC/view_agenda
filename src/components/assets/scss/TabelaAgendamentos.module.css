@@ -14,18 +14,25 @@
 }
 
 .tabela thead th {
-  background-color: #f0f0f0;
-  color: #333;
-  padding: 10px;
-  text-align: left;
+  background-color: #05a1fc;
+  color: #ffffff;
+  padding: 20px 10px;
+  text-align: center;
   border-bottom: 2px solid #ccc;
 }
 
 .tabela tbody td,
 .tabela tbody th {
-  padding: 8px;
+  padding: 0px;
   border-bottom: 1px solid #eee;
   text-align: left;
+}
+
+span {
+  color: rgb(68, 68, 68);
+  font-weight: lighter;
+  font-size: 1.2rem;
+  margin-left: 10px;
 }
 
 .tabela tbody tr:nth-child(even) {
@@ -37,16 +44,20 @@
 }
 
 .tabela tbody th {
-  font-weight: bold;
+  color: rgb(39, 39, 39);
 }
 
 .agendamentoItem {
-  margin-bottom: 5px;
-  padding: 5px;
-  background-color: #fff;
-  border: 1px solid #ddd;
-  border-radius: 4px;
+  padding: 15px 10px;
+  background-color: #35a3e3;
+  border: 1px solid #000000;
+  border-radius: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-size: 0.85em;
+  color: white;
+  font-weight: bold;
 }
 
 .botaoAgendamento {
