@@ -78,44 +78,39 @@ function TabelaDeDuasSemanas() {
     );
   };
 
-  if (isLoading) {
-    return (<h1>Está carregando</h1>)
-  } else {
-    return (
-      <div className={styles.tabelaContainer}>
-        <table className={styles.tabela}>
-          <thead>
-            <tr>
-              <th></th>
-              {colaboradores.map((colaborador) => (
-                <th key={colaborador}>{colaborador}</th>
-              ))}
-            </tr>
-          </thead>
-          <tbody>
-            {dias.map((dia) => (
-              <tr key={dia.formatado}>
-                <th><span>{dia.formatado}</span></th>
-                {colaboradores.map((colaborador) => {
-                  const agendamentosDoDia = encontrarAgendamentos(dia, colaborador);
-                  return (
-                    <td key={`${dia.formatado}-${colaborador}`}>
-                      {agendamentosDoDia.map((agendamento, index) => (
-                        <div key={index} className={styles.agendamentoItem}>
-                          {agendamento.cliente} {/* Exibe apenas o nome do cliente */}
-                        </div>
-                      ))}
-                    </td>
-                  );
-                })}
-              </tr>
+  return (
+    <div className={styles.tabelaContainer}>
+      <table className={styles.tabela}>
+        <thead>
+          <tr>
+            <th></th>
+            {colaboradores.map((colaborador) => (
+              <th key={colaborador}>{colaborador}</th>
             ))}
-          </tbody>
-        </table>
-      </div>
-    );
-  }
-
+          </tr>
+        </thead>
+        <tbody>
+          {dias.map((dia) => (
+            <tr key={dia.formatado}>
+              <th><span>{dia.formatado}</span></th>
+              {colaboradores.map((colaborador) => {
+                const agendamentosDoDia = encontrarAgendamentos(dia, colaborador);
+                return (
+                  <td key={`${dia.formatado}-${colaborador}`}>
+                    {agendamentosDoDia.map((agendamento, index) => (
+                      <div key={index} className={styles.agendamentoItem}>
+                        {agendamento.cliente} {/* Exibe apenas o nome do cliente */}
+                      </div>
+                    ))}
+                  </td>
+                );
+              })}
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+  );
 
 }
 
