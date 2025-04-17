@@ -1,18 +1,15 @@
+
 import React, { useState, useEffect } from 'react';
 import styles from './components/assets/scss/TabelaAgendamentos.module.css'
 import data from './data.json'
+import axios from 'axios'
 function TabelaDeDuasSemanas() {
   // const [colaboradores, setColaboradores] = useState(['João Ramajo', 'Felipe Darc', 'Cleiton Henrique', 'Rodrigo salomão', 'Tiago fascina']);
   const [colaboradores, setColaboradores] = useState(data.colaboradores);
-
-
   const [agendamentos, setAgendamentos] = useState(data.agendamentos);
   const [dias, setDias] = useState([]);
   const [novoAgendamento, setNovoAgendamento] = useState({ colaborador: '', dia: '', cliente: '' }); // Novo agendamento sem 'das' e 'ate'
   const [exibirFormulario, setExibirFormulario] = useState(false);
-
-  const jsonData = data
-
 
 
 
