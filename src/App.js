@@ -6,6 +6,7 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import QuadroAviso from './components/widgets/QuadroAviso';
 import Menu from './components/widgets/Menu';
 import Home from './mobile/Home';
+
 function App() {
   const [isMobile, setIsMobile] = useState(window.innerWidth < 768); // Exemplo de breakpoint
 
