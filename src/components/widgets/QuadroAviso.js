@@ -1,11 +1,28 @@
-
+import data from '../../avisos.json'
+import { useState } from 'react'
 const QuadroAviso = () => {
+
+    const [avisos, setAvisos] = useState(data)
+
+    console.log(avisos)
+
+
+
+
+
     return (
         <>
 
-            <ul class="list-group w-100 px-2">
+            <ul className="list-group w-10 mt-5">
                 <h2 className="text-center">Avisos gerais</h2>
-                <li class="list-group-item">Colaborador x Entrara de ferias dia 12/04</li>
+
+                {
+
+                    avisos.map((aviso)=>(
+                        <li class="list-group-item">{aviso.aviso}</li>
+                    ))
+
+                }
             </ul>
         </>
     )

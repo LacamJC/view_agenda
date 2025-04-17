@@ -4,6 +4,10 @@
   font-family: "Roboto Flex", sans-serif;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 .tabelaContainer {
   width: 100%;
   overflow-x: auto; /* Adiciona barra de rolagem horizontal se a tabela for muito larga */
@@ -16,15 +20,16 @@
   border: 1px solid ccc;
   font-size: 0.7em;
   min-width: 300px; /* Garante uma largura mínima para evitar layouts quebrados */
+  border-left: 1px solid rgba(0, 0, 0, 0.051);
 }
 
 .tabela thead th {
-  background-color: #2A2D32;
+  background-color: rgba(42, 45, 50, 0.9529411765);
   color: #FAFAFA;
   padding: 20px 10px;
   text-align: center;
   border-bottom: 2px solid #FAFAFA;
-  border: 2px solid black;
+  border: 1px solid transparent;
   min-width: 100px;
   font-weight: normal;
   font-size: 1rem;
@@ -46,28 +51,24 @@ span {
   margin-left: 10px;
 }
 
-.tabela tbody tr:nth-child(even) {
-  background-color: #f9f9f9;
-}
-
 .tabela tbody tr:hover {
   background-color: #e6f7ff;
 }
 
 .tabela tbody th {
   color: rgb(39, 39, 39);
-  width: 150px;
+  text-align: center;
 }
 
 .tabela tbody td {
-  border-right: 1px solid rgba(0, 0, 0, 0.175);
-  border-left: 1px solid rgba(0, 0, 0, 0.175);
+  border-right: 1px solid rgba(0, 0, 0, 0.051);
+  border-left: 1px solid rgba(0, 0, 0, 0.051);
 }
 
 .agendamentoItem {
   padding: 15px 10px;
-  background-color: #177bb6;
-  border: 1px solid #afe2ff;
+  background-color: rgba(23, 124, 182, 0.7058823529);
+  border: 1px solid rgba(175, 226, 255, 0.4274509804);
   border-radius: 0px;
   display: flex;
   justify-content: center;

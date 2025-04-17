@@ -5,9 +5,7 @@
       "Cleiton Henrique",
       "Felipe Darc",
       "Rodrigo Salomão",
-      "Nome 2",
-      "nome 4",
-      "nome 9"
+      "Nome 2"
     ],
     "agendamentos": [
       {
@@ -91,29 +89,9 @@
         "cliente": "ABC Inc"
       },
       {
-        "colaborador": "nome 4",
-        "dia": "20/04",
-        "cliente": "XYZ Co"
-      },
-      {
-        "colaborador": "nome 9",
-        "dia": "23/04",
-        "cliente": "123 Ltd"
-      },
-      {
         "colaborador": "Nome 2",
         "dia": "26/04",
         "cliente": "GHI Corp"
-      },
-      {
-        "colaborador": "nome 4",
-        "dia": "29/04",
-        "cliente": "JKL Sol"
-      },
-      {
-        "colaborador": "nome 9",
-        "dia": "19/04",
-        "cliente": "MNO Ent"
       },
       {
         "colaborador": "Nome 2",
@@ -121,19 +99,39 @@
         "cliente": "PQR Grp"
       },
       {
-        "colaborador": "nome 4",
-        "dia": "25/04",
-        "cliente": "STU Sys"
-      },
-      {
-        "colaborador": "nome 9",
-        "dia": "28/04",
-        "cliente": "VWX Ind"
-      },
-      {
         "colaborador": "Nome 2",
         "dia": "30/04",
         "cliente": "YZA Hld"
+      },
+      {
+        "colaborador": "João Ramajo",
+        "dia": "19/04",
+        "cliente": "Sol Nascente"
+      },
+      {
+        "colaborador": "Tiago Fascina",
+        "dia": "21/04",
+        "cliente": "Lua Crescente"
+      },
+      {
+        "colaborador": "Cleiton Henrique",
+        "dia": "23/04",
+        "cliente": "Estrela Cadente"
+      },
+      {
+        "colaborador": "Felipe Darc",
+        "dia": "25/04",
+        "cliente": "Planeta Azul"
+      },
+      {
+        "colaborador": "Rodrigo Salomão",
+        "dia": "28/04",
+        "cliente": "Via Láctea"
+      },
+      {
+        "colaborador": "Nome 2",
+        "dia": "20/04",
+        "cliente": "Cometa Halley"
       }
     ]
   }
