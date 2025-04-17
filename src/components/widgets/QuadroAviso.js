@@ -4,7 +4,6 @@ const QuadroAviso = () => {
 
     const [avisos, setAvisos] = useState(data)
 
-    console.log(avisos)
 
 
 

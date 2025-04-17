@@ -44,7 +44,7 @@ function TabelaDeDuasSemanas() {
         console.log(err)
       }
     }
-    fetchData()
+    // fetchData()
   }, []);
 
 
